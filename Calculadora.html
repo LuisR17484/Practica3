@@ -7,13 +7,48 @@
 		Responsiva
 	</title>
 	<link rel="stylesheet" type="text/css" href="Estilos.css">
+	<style>
+		.main .post{
+			background-image: url("img/");
+			background-position-x: center;
+			background-position-y: center;
+			background-repeat: no-repeat;
+			background-size: 400px;
+		}
+
+		form p{
+			text-align: center;
+			margin-bottom: 20px;
+			font-size: 30px;
+		}
+
+		input[type="text"]{
+			width: 20%;
+			margin-bottom: 20px;
+			padding: 20px;
+			text-align: center;
+		}
+		form .btn{
+			width: 15%;
+			background: #cf5c36;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+			text-align: center;
+			padding: 20px;
+			display: inline-block;
+			text-decoration: none;
+		}
+	</style>
+
 </head>
 <body>
 	<div class="contenedor">
 		<header>
 			<nav>
 				<ul>
-					<li><a href="Index.hmtl">Inicio</a></li>
+					<li><a href="Index.html">Inicio</a></li>
 					<li><a href="Calculadora.html">Calculadora</a></li>
 					<li><a href="#">Galeria</a></li>
 					<li><a href="#">Contacto</a></li>
@@ -22,19 +57,27 @@
 		</header>
 		<section class="main">
 			<div class="imagen">
-				<img src="img/estacion.png">
+				<h2>Calculadora</h2>
+				<p>El formulario realiza las acciones de una calculadora</p>
 			</div>
-			<section class="ref">
+			<section class="post">
 				<article>
-					<h2>Terminal de Trenes</h2>
-					<p><strong>Lorem ipsum dolor sit amet. Ex laborum autem 33 explicabo quos est repellendus ducimus aut eligendi galisum. Vel totam inventore sit velit iste a minus odit vel autem porro est officia esse quo totam asperiores. Ad dolorem laboriosam aut odit sint rem corrupti provident sed quasi nemo qui unde nihil. <br>Et laudantium maiores quo dicta dolores a quod incidunt qui dolores excepturi aut assumenda doloribus quo galisum tenetur aut doloribus quidem! Non dolorem distinctio sed nihil officia id officiis sequi vel unde omnis ut nisi iusto sit quod repudiandae. Et molestias dolores est internos quam ut suscipit blanditiis eum soluta autem qui cumque modi ab dicta Quis. Cum quia ab debitis velit qui optio aspernatur?</strong></p>
+					<form action="">
+						<input type="text" id="numero1">
+						<p>+</p>
+						<input type="text" id="numero2">
+						<p>=</p>
+						<input type="text" id="resultado" readonly>
+						<input type="button" class="btn" value="resultado">
+
+						
+					</form>
 				</article>
-				
 			</section>
 		</section>
 
 		<aside>
-			<div class="lateral">
+			<div class="widget">
 				<h3 class="titulo">Próximas salidas</h3>
 				<ul>
 					<li><a href="#">Salida a la ciudad:</a></li>

@@ -117,3 +117,37 @@ footer{
 	padding: 15px 0;
 	text-align: center;
 }
+
+/*uso de mediaqueries*/
+@media screen and (max-width:  800px){ /*(@media screen) significa que se adapta a la patalla*/
+	.main{
+		width: 100%;
+		font-size: 12px;
+		background: black;
+	}
+
+	aside{
+		width: 100px;
+		background: darkblue;
+	}
+
+	footer{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width 600px){
+	.main{
+		width: 100%;
+		font-size: 12px;
+		background: lightseagreen;
+	}
+
+	aside{
+		width: 100%;
+	}
+
+	footer{
+		width: 100%s;
+	}
+}
