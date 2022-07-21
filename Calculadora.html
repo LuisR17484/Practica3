@@ -4,11 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>
-		Responsiva
+		Calculadora
 	</title>
 	<link rel="stylesheet" type="text/css" href="Estilos.css">
 	<style>
 		.main .post{
+			width: 100%;
 			background-image: url("img/");
 			background-position-x: center;
 			background-position-y: center;
@@ -22,7 +23,7 @@
 			font-size: 30px;
 		}
 
-		input[type="text"]{
+		input[type="text"]{/*Para todos los imput de tipo texto*/
 			width: 20%;
 			margin-bottom: 20px;
 			padding: 20px;
@@ -64,11 +65,16 @@
 				<article>
 					<form action="">
 						<input type="text" id="numero1">
+						<br>
 						<p>+</p>
+						<br>
 						<input type="text" id="numero2">
+						<br>
 						<p>=</p>
+						<br>
 						<input type="text" id="resultado" readonly>
-						<input type="button" class="btn" value="resultado">
+						<br>
+						<input type="button" onclick="suma()" class="btn" value="resultado">
 
 						
 					</form>
@@ -100,5 +106,7 @@
 			<p>Central de Trenes de New York CopyRight(c)</p>
 		</footer>
 	</div>
+
+	<script src="js/Acciones.js"></script>
 </body>
 </html>
