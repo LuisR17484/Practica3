@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Registrarse
+	</title>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="Estilos.css">
+	<style>
+		.caja{
+			background: #f2f2f2f2;
+			font-family: 'Slabo 27px', serif;
+			font-size: 18px;
+			width: 80%;
+			margin: 40px;
+		}
+
+		.formulario .caja-inputs{
+			padding: 20px;
+			background: gray;
+			border-radius: 6px 6px 0 0;
+		}
+
+		.formulario input[type="text"], .formulario input[type="correo"]{
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+			padding: 15px 10px;
+			border: none;
+			border-bottom: 2px solid #ccc;
+			font-family: 'Slabo 27px', serif;
+			font-size: 18px;
+		}
+
+		.formulario input[type="text"]:focus, .formulario input[type="correo"]:focus{
+			border-bottom: 5px solid #246eb9;
+		}
+
+		.formulario input[type="radio"]{
+			display: none;
+		}
+
+		.formulario .sexo{
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+
+		.formulario .sexo .hombre{
+			border-radius: 5px 0 0 5px;
+		}
+
+		.formulario .sexo .mujer{
+			border-radius: 0 5px 5px 0;
+		}
+
+		.formulario .label-radio{
+			background: rgba(249, 160, 63, 0.4);/*0.4 se refiere a la transparencia*/
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			width: 49%;
+		}
+
+		.formulario input[type="radio"]:checked + .label-radio{
+			background: #f9a03f;
+		}
+
+		.formulario .terminos{
+			text-align: center;
+			color: #424242;
+		}
+
+		.formulario .terminos label{
+			margin-left: 10px;
+		}
+
+		.formulario .error{
+			display: none;/*Se encarga de ocultar la seccion de errores*/
+			margin-top: 20px;
+			border-radius: 3px;
+			background: #ce1818;
+			color: #fff;
+			padding: 15px 10px;
+			padding-left: 40px;
+		}
+
+		.formulario .btn{
+			width: 100%;
+			text-align: center;
+			background: #246eb9;
+			color: #fff;
+			border: none;
+			display: block;
+			padding: 15px 10px;
+			cursor: pointer;
+			border-radius: 0 0 6px 6px;
+			font-family: 'Slabo 27px', serif;
+			font-size: 18px;
+		}
+
+		.formulario .btn:hover{
+			background: #4357ad;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="Index.html">Inicio</a></li>
+					<li><a href="Calculadora.html">Calculadora</a></li>
+					<li><a href="Registrarse.html">Registrarse</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="caja">
+				<form action="" class="formulario" id="formulario" name="formulario">
+					<div class="caja-inputs">
+						<input type="text" name="nombre" placeholder="Nombre"><!---placeholder coloca texto en el fondo en la casilla --->
+						<input type="text" name="correo" placeholder="Correo">
+						<div class="sexo">
+							<input type="radio" name="sexo" id="hombre" value="Hombre">
+							<label class="label-radio hombre" for="hombre">Hombre</label>
+							<input type="radio" name="sexo" id="mujer" value="Mujer">
+							<label class="label-radio mujer" for="mujer">Mujer</label>
+						</div>
+						<div class="terminos">
+							<input type="checkbox" name="terminos" id="terminos">
+							<label for="terminos">Acepto los terminos y condiciones</label>
+						</div>
+						<ul class="error" id="error"></ul>
+					</div>
+					<input type="submit" class="btn" value="Registrarse">
+				</form>
+			</div>
+		</section>
+
+		<aside>
+			<div class="widget">
+				<h3 class="titulo">Próximas salidas</h3>
+				<ul>
+					<li><a href="#">Salida a la ciudad:</a></li>
+					<li><a href="#">Salida a la ciudad:</a></li>
+					<li><a href="#">Salida a la ciudad:</a></li>
+					<li><a href="#">Salida a la ciudad:</a></li>
+					<li><a href="#">Salida a la ciudad:</a></li>
+					<li><a href="#">Salida a la ciudad:</a></li>
+					<li><a href="#">Salida a la ciudad:</a></li>
+				</ul>
+			</div>
+
+			<div class="lateral">
+				<h3 class="titulo">Información</h3>
+				<p>Et laudantium maiores quo dicta dolores a quod incidunt qui dolores excepturi aut assumenda doloribus quo galisum tenetur aut doloribus quidem! Non dolorem distinctio sed nihil officia id officiis sequi vel unde omnis ut nisi iusto sit quod repudiandae. Et molestias dolores est internos quam ut suscipit blanditiis eum soluta autem qui cumque modi ab dicta Quis. Cum quia ab debitis velit qui optio aspernatur?</p>
+			</div>
+		</aside>
+
+		<footer>
+			<p>Central de Trenes de New York CopyRight(c)</p>
+		</footer>
+	</div>
+
+	<script src="js/Acciones2.js"></script>
+</body>
+</html>
